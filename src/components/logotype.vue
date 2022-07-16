@@ -1,25 +1,23 @@
 <template>
   <router-link id="logotype" to="/">
-    <div class="container">
-      <img src="@/assets/logos/ericemanuel.svg" alt="Eric Emanuel" />
-    </div>
+    <img src="@/assets/logos/ericemanuel.svg" alt="Eric Emanuel" />
   </router-link>
 </template>
 
 <script>
-  export default {
-    name: 'logotype'
-  }
+export default {
+  name: 'logotype'
+}
 </script>
 
 <style scoped lang="scss">
-  img {
-    width: 170px;
-  }
+img {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+  width: 170px;
+}
 
-  @media only screen and (min-width: 1000px) {
-    img {
-      width: 220px;
-    }
-  }
+@media only screen and (min-width: 1000px) {}
 </style>

@@ -1,4 +1,6 @@
 <template>
+  <cover id="cover" title="Soul" subtitle="Interfaces com o pensamento"></cover>
+
   <introduction id="intro" title="Soul" description="Tomada de decisões baseadas no desejo inconsciente do usuário"
     logo="puc-rio" alt="Puc-Rio" :skills="['Desenvolvimento', 'UX Design', 'Eletrônica']" />
 
@@ -34,6 +36,7 @@
 </template>
 
 <script>
+import cover from '@/components/cover.vue';
 import introduction from '@/components/introduction.vue';
 import stage from '@/components/stage.vue';
 import board from '@/components/board.vue'
@@ -43,7 +46,7 @@ import others from '@/components/others.vue';
 
 export default {
   name: 'soul',
-  components: { introduction, stage, board, quote, gallery, others }
+  components: { cover, introduction, stage, board, quote, gallery, others }
 };
 </script>
 

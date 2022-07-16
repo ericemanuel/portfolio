@@ -147,7 +147,6 @@ export default {
 
 <style scoped lang="scss">
 #hero {
-  margin-top: 60px;
   position: relative;
 }
 
@@ -210,7 +209,7 @@ export default {
 
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, max(150px));
+    grid-template-columns: repeat(auto-fit, max(170px));
     grid-gap: 20px;
   }
 
@@ -233,6 +232,7 @@ export default {
   }
 
   video {
+    display: none;
     position: absolute;
     top: -25px;
     right: 0;
@@ -342,6 +342,10 @@ export default {
 
     a:nth-of-type(3n-2) {
       transform: translateY(100px);
+    }
+
+    video {
+      display: unset;
     }
   }
 

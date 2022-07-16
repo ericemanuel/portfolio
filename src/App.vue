@@ -31,7 +31,7 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding: 20px 0 40px;
+  padding: 100px 0 40px;
   overflow-x: hidden;
 }
 
@@ -65,7 +65,7 @@ hr {
 
 @media only screen and (min-width: 1000px) {
   body {
-    padding: 30px 0;
+    padding: 30px 0 30px;
   }
 
   section,
