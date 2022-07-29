@@ -1,7 +1,11 @@
 <template>
-  <router-link id="logotype" to="/">
-    <img src="@/assets/logos/ericemanuel.svg" alt="Eric Emanuel" />
-  </router-link>
+  <nav id="logotype">
+    <div class="container">
+      <router-link to="/">
+        <img src="@/assets/logos/ericemanuel.svg" alt="Eric Emanuel" />
+      </router-link>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -11,13 +15,24 @@ export default {
 </script>
 
 <style scoped lang="scss">
-img {
-  position: fixed;
-  top: 40px;
-  left: 40px;
-  z-index: 10;
-  width: 170px;
+.container {
+  position: relative;
 }
 
-@media only screen and (min-width: 1000px) {}
+a {
+  width: 100%;
+}
+
+img {
+  position: absolute;
+  top: 20px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 1000px) {
+  img {
+  height: 50px;
+}
+}
 </style>
+  

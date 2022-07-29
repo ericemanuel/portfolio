@@ -130,11 +130,12 @@ export default {
   setup() {
     const onSwiper = () => {
       const pagination = document.querySelector('.swiper-pagination');
-      if (screen.width >= 1000) {
-        pagination.style.right = (screen.width - 900) / 2 + "px"
+      console.log(screen.width);
+      if (screen.width < 1000) {
+        pagination.style.right = (screen.width - 320) / 2 + "px"
       }
       else {
-        pagination.style.right = (screen.width - 320) / 2 + "px"
+        pagination.style.right = (screen.width - 1000) / 2 + "px"
       }
     };
     return {
@@ -269,10 +270,6 @@ export default {
 }
 
 @media only screen and (min-width: 1000px) {
-  #hero {
-    margin-top: 150px;
-  }
-
   #about {
     margin: 180px 0 150px;
 

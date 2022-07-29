@@ -1,8 +1,12 @@
 <template>
-  <cover id="cover" title="Soul" subtitle="Interfaces com o pensamento"></cover>
+  <cover id="cover" title="Soul" description="Interfaces com o pensamento"></cover>
 
-  <introduction id="intro" title="Soul" description="Tomada de decisões baseadas no desejo inconsciente do usuário"
-    logo="puc-rio" alt="Puc-Rio" :skills="['Desenvolvimento', 'UX Design', 'Eletrônica']" />
+  <introduction id="intro" stage="Desafio" title="Interfaces controladas pelo pensamento"
+    :paragraphs="[
+    'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
+    'After a series of innovation workshops, the team has decided on perfecting the pickup and delivery process by integrating a mobile app for their consumers.',
+    'With the David & Sebs at the helm of it all, the whole team quickly got into the drawing board – drafting, sharing and skeching their ideas.']" location="Rio de Janeiro" date="2014" logo="puc-rio"
+    alt="Puc-Rio" :skills="['Desenvolvimento', 'UX Design', 'Eletrônica']" />
 
   <stage class="stage" stage="Desafio" title="An MVP for the tech-enabled store" :paragraphs="[
     'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',
@@ -12,8 +16,8 @@
 
   <board id="board" :images="['1', '2', '3']" :alts="['1', '2', '3']" />
 
-  <quote class="quote" quote="In just a few months – they already have branches expanding from Singapore to Bangkok. And now,
-          secretly brewing six more yellow shops near you." />
+  <quote class="quote"
+    quote="In just a few months – they already have branches expanding from Singapore to Bangkok. And now, secretly brewing six more yellow shops near you." />
 
   <stage class="stage" stage="Desafio" title="An MVP for the tech-enabled store" :paragraphs="[
     'Multiple customer touchpoints provides a wide opportunity for improving the ordering experience.',

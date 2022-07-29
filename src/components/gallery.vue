@@ -27,12 +27,12 @@ figure {
 
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, max(150px));
+    grid-template-columns: repeat(auto-fit, max(170px));
     grid-gap: 20px;
 
     img {
       width: 100%;
-      max-height: 220px;
+      height: 250px;
       border-radius: 15px;
       background-color: #3298CB;
     }
@@ -62,7 +62,7 @@ figure {
       grid-gap: 45px;
 
       img {
-        max-height: 400px;
+        height: 400px;
       }
     }
   }

@@ -31,8 +31,12 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding: 100px 0 40px;
+  padding: 0 0 40px;
   overflow-x: hidden;
+}
+
+header {
+  margin: 120px 0 80px;
 }
 
 section,
@@ -57,19 +61,20 @@ em {
 }
 
 hr {
-  margin: 20px 0 20px;
+  margin: 20px 0;
   width: 30px;
   box-sizing: border-box;
-  border: 1px solid #38bfc3;
+  border: 2px solid #38bfc3;
 }
 
 @media only screen and (min-width: 1000px) {
-  body {
-    padding: 30px 0 30px;
+  header {
+    margin: 190px 0 150px;
   }
 
   section,
-  article {
+  article,
+  figure {
     margin: 150px 0;
   }
 
