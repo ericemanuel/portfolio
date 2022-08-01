@@ -15,6 +15,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+nav {
+  z-index: 1;
+}
+
 .container {
   position: relative;
 }
@@ -25,14 +29,15 @@ a {
 
 img {
   position: absolute;
+  z-index: 1;
   top: 20px;
   height: 40px;
 }
 
 @media only screen and (min-width: 1000px) {
   img {
-  height: 50px;
-}
+    height: 50px;
+  }
 }
 </style>
   

@@ -28,12 +28,13 @@ export default {
 
 <style scoped lang="scss">
 section {
-  padding: 80px 0;
+  margin-bottom: 40px;
+  padding: 60px 0;
   background-color: rgba(0, 0, 0, .3);
 
   .container {
     justify-content: space-between;
-
+  
     a:first-child {
       display: none;
     }
@@ -72,6 +73,7 @@ section {
 
 @media only screen and (min-width: 1000px) {
   section {
+    margin-bottom: 60px;
     padding: 100px 0;
 
     .container {

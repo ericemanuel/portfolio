@@ -1,9 +1,19 @@
 <template>
   <header id="hero">
-    <swiper :modules="modules" :speed=1500 :autoplay='{ delay: 7000, disableOnInteraction: false }'
-      :pagination="{ clickable: true }" @swiper="onSwiper">
+    <swiper
+      :modules="modules"
+      :speed="1500"
+      :autoplay="{ delay: 7000, disableOnInteraction: false }"
+      :pagination="{ clickable: true }"
+      @swiper="onSwiper"
+    >
       <swiper-slide v-for="slide in slides">
-        <slide :title="slide.title" :description="slide.description" :icon="slide.icon" :alt="slide.alt" />
+        <slide
+          :title="slide.title"
+          :description="slide.description"
+          :icon="slide.icon"
+          :alt="slide.alt"
+        />
       </swiper-slide>
     </swiper>
   </header>
@@ -16,8 +26,10 @@
       </div>
       <div class="texts">
         <h1>Boas ideias vêm do encontro de vários conhecimentos</h1>
-        <hr>
-        <p>Eu estudo Design, Desenvolvimento, Marketing, Liderança, Música <em>e faço um miojo maravilhoso!</em>
+        <hr />
+        <p>
+          Eu estudo Design, Desenvolvimento, Marketing, Liderança, Música
+          <em>e faço um miojo maravilhoso!</em>
         </p>
         <div>
           <icon link="#" icon="whatsapp" alt="Whatsapp" />
@@ -31,18 +43,26 @@
 
   <section id="portfolio">
     <div class="container">
-      <card v-for="card in cards" :link="card.link" :logo="card.logo" :logo_alt="card.alt" :icon="card.icon"
-        :icon_alt="card.alt" :category="card.category" :title="card.title" />
+      <card
+        v-for="card in cards"
+        :link="card.link"
+        :logo="card.logo"
+        :logo_alt="card.alt"
+        :icon="card.icon"
+        :icon_alt="card.alt"
+        :category="card.category"
+        :title="card.title"
+      />
     </div>
     <video autoplay muted loop playsinline poster="@/assets/videos/greengrid.png">
-      <source src="@/assets/videos/greengrid.webm" type="video/webm">
+      <source src="@/assets/videos/greengrid.webm" type="video/webm" />
     </video>
   </section>
 
   <section id="blog">
     <a class="container" href="#">
       <h1>Meu Blog</h1>
-      <hr>
+      <hr />
       <p>Eu mantenho um blog sobre assuntos interessantes, dê uma olhada! =D</p>
     </a>
   </section>
@@ -130,12 +150,12 @@ export default {
   setup() {
     const onSwiper = () => {
       const pagination = document.querySelector('.swiper-pagination');
-      console.log(screen.width);
-      if (screen.width < 1000) {
-        pagination.style.right = (screen.width - 320) / 2 + "px"
+      console.log(innerWidth);
+      if (innerWidth < 1000) {
+        pagination.style.right = (innerWidth - 360) / 2 + "px";
       }
       else {
-        pagination.style.right = (screen.width - 1000) / 2 + "px"
+        pagination.style.right = (innerWidth - 900) / 2 + "px"
       }
     };
     return {
@@ -177,7 +197,7 @@ export default {
     top: -10px;
     right: -10px;
     box-sizing: border-box;
-    border: 1px solid #3298cb;
+    border: 1.5px solid #3298cb;
   }
 
   .texts {

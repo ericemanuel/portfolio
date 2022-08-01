@@ -32,7 +32,6 @@ body {
   position: relative;
   margin: 0;
   padding: 0 0 40px;
-  overflow-x: hidden;
 }
 
 header {
@@ -64,7 +63,7 @@ hr {
   margin: 20px 0;
   width: 30px;
   box-sizing: border-box;
-  border: 2px solid #38bfc3;
+  border-top: 1.5px solid #38bfc3;
 }
 
 @media only screen and (min-width: 1000px) {

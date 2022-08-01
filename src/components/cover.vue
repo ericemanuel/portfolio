@@ -17,10 +17,12 @@ export default {
 
 <style scoped lang="scss">
 header {
+  position: relative;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
   margin-top: 0;
   background-color: gray;
 }
